@@ -1,0 +1,10 @@
+<html>
+    <body>
+        Paste the following in the application:
+        <p id="code">Code</p>
+    </body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("code").innerHTML = '<b>' + urlParams.get('code') + "</b>"
+    </script>
+</html>
